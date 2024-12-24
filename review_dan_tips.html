@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Product</title>
+  <link rel="stylesheet" href="review_dan_tips.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bakmie Sadja</h1>
+
+    <!-- Form Tambah Review -->
+    <div class="review-form">
+      <h2>Tambahkan Review untuk Bakmie Sadja</h2>
+      <form id="review-form">
+        <label for="menu">Pilih Menu</label>
+        <input type="text" id="menu" name="menu" placeholder="Masukkan nama menu" required>
+
+        <label for="rating">Rating</label>
+        <div class="stars" id="star-rating">
+          <span class="star" data-value="5">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="1">★</span>
+        </div>
+
+        <label for="review-text">Tulis Ulasan</label>
+        <textarea id="review-text" name="review-text" rows="4" placeholder="Tulis ulasan Anda" required></textarea>
+
+        <button type="submit" class="submit-btn">Kirim</button>
+      </form>
+    </div>
+
+    <!-- Daftar Review -->
+    <div class="reviews-container">
+      <h2>Review Product (<span id="review-count">254</span>)</h2>
+      <div class="reviews" id="reviews-container">
+        <!-- Contoh Review -->
+        <div class="review-item">
+          <div class="review-header">
+            <div class="profile">
+              <img src="images/tanboy kun.jpeg" alt="Tanboy Kun" class="profile-pic">
+              <span>TANBOY KUN</span>
+            </div>
+            <div class="review-meta">
+              <span class="rating">★★★★★</span>
+              <span class="review-date">5 Mei 2024</span>
+            </div>
+          </div>
+          <p class="review-text">
+            GACORR! ENAK BANGET BAKMIE NYA, RECOMMENDED BANGET BUAT YANG LAGI MAMPIR DI MALANG. THE BEST LAH POKOKNYA
+          </p>
+          <div class="menu-info">
+            <img src="images/bakmie.jpg" alt="Bakmie Sadja" class="menu-pic">
+            <strong>Menu Pilihan Saya:</strong> Bakmie Sadja
+          </div>
+        </div>
+      </div>
+      <button id="tips-button" onclick="window.location.href='bayar_tips.html'">Beri Tips</button>
+    </div>
+  </div>
+
+  <script src="review_dan_tips.js"></script>
+</body>
+</html>
